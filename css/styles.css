@@ -352,12 +352,13 @@ body{
     border-radius: 50%;
     background-color: #FFFFFF;
 
-    transition: background-color var(--transition), fill var(--transition);}
+    transition: background-color var(--transition);}
 
 .social-list-link:hover,
 .social-list-link:focus{
     background-color: #2196F3;
 }
+
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon{
     fill: #FFFFFF;
@@ -371,6 +372,7 @@ body{
 }
 .social-list-icon{
     fill: #AFB1B8;
+    transition: fill var(--transition)
 }
 
 
@@ -485,6 +487,7 @@ body{
    
 .footer-list-icon{
     Fill: #FFFFFF;
+    transition: fill var(--transition);
 }
 .footer-adress-social{
     display: flex;
@@ -511,14 +514,14 @@ body{
         cursor: pointer;
         font-weight: 500;
         font-size: 16px;
-        line-height: 1,63;
+        line-height: 1.63;
         padding-top: 6px;
         padding-bottom: 6px;
         padding-left: 22px;
         padding-right: 22px;
         /* identical to box height, or 162% */
 
-    
+        border-radius: 4px;
         letter-spacing: 0.03em;
     
         color: #212121;
@@ -570,6 +573,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 30px;
 }
 .our-works{
     padding-left: 24px;
@@ -584,14 +588,11 @@ body{
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.portfolio-section:hover,
-.portfolio-section:focus{
+.portfolio-title:hover,
+.portfolio-title:focus{
     box-shadow: 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.portfolio-section{
-    margin-bottom: 30px;
 }
 
 .portfolio-list-img {
@@ -617,6 +618,9 @@ body{
     padding-right: 24px;
     color: #FFFFFF;
     background-color: rgba(33, 150, 243, 0.9);
+}
+.portfolio-title{
+    display: block;
 }
 
 .portfolio-title:hover .overlay,
